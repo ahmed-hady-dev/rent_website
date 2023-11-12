@@ -5,8 +5,8 @@ import '../../../constants/app_colors.dart';
 import '../../../constants/app_const.dart';
 
 class HeaderText extends StatelessWidget {
-  const HeaderText({Key? key}) : super(key: key);
-
+  const HeaderText({Key? key, this.smallText}) : super(key: key);
+  final String? smallText;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -17,7 +17,7 @@ class HeaderText extends StatelessWidget {
                 .displaySmall!
                 .copyWith(color: AppColors.indigo, fontWeight: FontWeight.bold)),
         TextWithPadding(
-            text: 'أهلاً بك',
+            text: smallText ?? 'أهلاً بك',
             vertical: 24,
             style:
                 Theme.of(context).textTheme.displaySmall!.copyWith(color: Colors.black, fontWeight: FontWeight.bold)),
