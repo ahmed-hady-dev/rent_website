@@ -17,10 +17,9 @@ ThemeData lightTheme(BuildContext context) {
       },
     ),
     brightness: Brightness.light,
-    dividerColor: Colors.black,
     colorScheme: Theme.of(context).colorScheme.copyWith(
-          primary: Colors.black,
-          secondary: Colors.black,
+          primary: Colors.indigoAccent,
+          secondary: Colors.indigoAccent,
         ),
     inputDecorationTheme: InputDecorationTheme(
       filled: true,
@@ -44,16 +43,16 @@ ThemeData lightTheme(BuildContext context) {
       ),
     ),
     textSelectionTheme: const TextSelectionThemeData(
-      cursorColor: Colors.black,
+      cursorColor: Colors.indigoAccent,
     ),
     textButtonTheme: TextButtonThemeData(
-      style: TextButton.styleFrom(primary: Colors.black),
+      style: TextButton.styleFrom(primary: Colors.indigoAccent),
     ),
     floatingActionButtonTheme: const FloatingActionButtonThemeData(
       backgroundColor: Colors.grey,
     ),
     checkboxTheme: CheckboxThemeData(
-      fillColor: MaterialStateProperty.all(Colors.black),
+      fillColor: MaterialStateProperty.all(Colors.indigoAccent),
     ),
   );
 }

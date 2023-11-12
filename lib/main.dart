@@ -1,13 +1,13 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:rent_website/view/login/login_view.dart';
 
 import 'core/blocObserver/bloc_observer.dart';
 import 'core/dioHelper/dio_helper.dart';
 import 'core/hive_helper/hive_helper.dart';
 import 'core/router/router.dart';
 import 'core/theme/theme.dart';
-import 'view/home/home_view.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -42,7 +42,7 @@ class MyApp extends StatelessWidget {
       locale: context.locale,
       supportedLocales: context.supportedLocales,
       localizationsDelegates: context.localizationDelegates,
-      home: const HomeView(),
+      home: const LoginView(),
     );
   }
 }

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../core/router/router.dart';
 
-class AppCont {
+class AppConst {
   static const appName = "الإسم";
 }
 
