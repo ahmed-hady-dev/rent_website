@@ -22,7 +22,8 @@ dependencies:
   gap: ^3.0.1
   google_fonts: any
   firebase_core: ^2.22.0
-
+  dropdown_button2: ^2.3.9
+  flutter_svg: any
 
 dev_dependencies:
   flutter_test:

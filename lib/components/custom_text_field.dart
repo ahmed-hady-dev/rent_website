@@ -108,7 +108,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
                     : GestureDetector(
                         onTap: () => setState(() => _visible = !_visible),
                         child: Icon(_visible ? Icons.visibility_outlined : Icons.visibility_off_outlined,
-                            color: AppColors.indigo))),
+                            color: AppColors.purpleBlue))),
           ),
         ),
       ),

@@ -30,7 +30,7 @@ class PasswordConfirmedView extends StatelessWidget {
                 Container(
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
-                    color: AppColors.indigo,
+                    color: AppColors.purpleBlue,
                   ),
                   child: Container(
                     margin: const EdgeInsets.all(16),

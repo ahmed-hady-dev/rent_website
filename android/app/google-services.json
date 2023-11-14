@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "714519236669",
+    "project_id": "rent-website-c1750",
+    "storage_bucket": "rent-website-c1750.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:714519236669:android:e8bc186a1964436f5d9a54",
+        "android_client_info": {
+          "package_name": "dev.hady.rent_website"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC06fv9xicK-XNH1Hbig5Hg7eaROI22lJw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

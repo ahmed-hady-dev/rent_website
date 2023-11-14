@@ -16,7 +16,7 @@ class HeaderText extends StatelessWidget {
             style: Theme.of(context)
                 .textTheme
                 .displaySmall!
-                .copyWith(color: AppColors.indigo, fontWeight: FontWeight.bold)),
+                .copyWith(color: AppColors.purpleBlue, fontWeight: FontWeight.bold)),
         TextWithPadding(
             text: secondText ?? 'أهلاً بك',
             vertical: 24,

@@ -9,7 +9,7 @@ ThemeData lightTheme(BuildContext context) {
     textTheme: GoogleFonts.tajawalTextTheme(textTheme).copyWith(),
     primaryTextTheme: GoogleFonts.tajawalTextTheme(textTheme),
     primaryColor: Colors.black,
-    scaffoldBackgroundColor: Colors.white,
+    scaffoldBackgroundColor: AppColors.backgroundColor,
     splashColor: Colors.black,
     pageTransitionsTheme: const PageTransitionsTheme(
       builders: <TargetPlatform, PageTransitionsBuilder>{
@@ -17,10 +17,6 @@ ThemeData lightTheme(BuildContext context) {
       },
     ),
     brightness: Brightness.light,
-    colorScheme: Theme.of(context).colorScheme.copyWith(
-          primary: Colors.indigoAccent,
-          secondary: Colors.indigoAccent,
-        ),
     inputDecorationTheme: InputDecorationTheme(
       filled: true,
       fillColor: Colors.white,
@@ -54,5 +50,6 @@ ThemeData lightTheme(BuildContext context) {
     checkboxTheme: CheckboxThemeData(
       fillColor: MaterialStateProperty.all(Colors.indigoAccent),
     ),
+    colorScheme: Theme.of(context).colorScheme.copyWith(primary: Colors.indigoAccent, secondary: Colors.indigoAccent),
   );
 }
