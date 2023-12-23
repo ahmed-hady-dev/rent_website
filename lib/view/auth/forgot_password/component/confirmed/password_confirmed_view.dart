@@ -3,9 +3,9 @@ import 'package:rent_website/components/text_with_padding.dart';
 import 'package:rent_website/constants/app_const.dart';
 import 'package:rent_website/core/router/router.dart';
 
-import '../../../components/view_with_container.dart';
-import '../../../constants/app_colors.dart';
-import '../login/login_view.dart';
+import '../../../../../components/view_with_container.dart';
+import '../../../../../constants/app_colors.dart';
+import '../../../login/login_view.dart';
 
 class PasswordConfirmedView extends StatelessWidget {
   const PasswordConfirmedView({super.key});

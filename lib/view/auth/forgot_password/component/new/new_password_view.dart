@@ -3,10 +3,10 @@ import 'package:gap/gap.dart';
 import 'package:rent_website/components/view_with_container.dart';
 import 'package:rent_website/constants/app_const.dart';
 
-import '../../../constants/app_colors.dart';
-import '../login/component/header_text.dart';
-import 'component/confirm_button.dart';
-import 'component/new_password_form.dart';
+import '../../../../../constants/app_colors.dart';
+import '../../../login/component/header_text.dart';
+import '../confirm_button.dart';
+import '../new_password_form.dart';
 
 class NewPasswordView extends StatelessWidget {
   const NewPasswordView({super.key});

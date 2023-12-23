@@ -3,7 +3,7 @@ import 'package:rent_website/constants/app_const.dart';
 
 import '../../../../constants/app_colors.dart';
 import '../../../../core/router/router.dart';
-import '../password_confirmed_view.dart';
+import 'confirmed/password_confirmed_view.dart';
 
 class ConfirmButton extends StatelessWidget {
   const ConfirmButton({super.key});

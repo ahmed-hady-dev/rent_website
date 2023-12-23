@@ -2,22 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:rent_website/components/view_with_container.dart';
 import 'package:rent_website/constants/app_const.dart';
 
-import '../../../constants/app_colors.dart';
-import '../login/component/header_text.dart';
-import 'component/forgot_password_form.dart';
-import 'component/send_code_button.dart';
+import '../../../../../constants/app_colors.dart';
+import '../../../login/component/header_text.dart';
+import '../forgot_password_form.dart';
+import '../send_code_button.dart';
 
-class ForgotPasswordView extends StatelessWidget {
-  ForgotPasswordView({super.key});
-  final verticalController = ScrollController();
+class ForgotPasswordWeb extends StatelessWidget {
+  const ForgotPasswordWeb({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    // final screenType = context.screenType();
     return ViewWithContainer(
       children: [
         Flexible(
-          // flex: screenType == ScreenType.desktop ? 2 : 6,
+          flex: 2,
           child: Container(
             padding: EdgeInsets.symmetric(vertical: height * 0.08, horizontal: 32),
             decoration:

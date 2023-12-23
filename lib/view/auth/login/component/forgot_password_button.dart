@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:rent_website/core/router/router.dart';
 
 import '../../../../constants/app_colors.dart';
-import '../../forgot_password/forgot_password_view.dart';
+import '../../forgot_password/component/forgot/forgot_password_view.dart';
 
 class ForgotPasswordButton extends StatelessWidget {
   const ForgotPasswordButton({Key? key}) : super(key: key);
@@ -12,7 +12,7 @@ class ForgotPasswordButton extends StatelessWidget {
     return Align(
       alignment: AlignmentDirectional.centerEnd,
       child: TextButton(
-          onPressed: () => MagicRouter.navigateTo(ForgotPasswordView()),
+          onPressed: () => MagicRouter.navigateTo(const ForgotPasswordView()),
           child: const Text('نسيت كلمة المرور', style: TextStyle(color: AppColors.purpleDark))),
     );
   }
