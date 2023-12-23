@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:rent_website/components/text_with_padding.dart';
 import 'package:rent_website/constants/app_const.dart';
 import 'package:rent_website/core/router/router.dart';
-import 'package:rent_website/ui_helper.dart';
 
 import '../../../components/view_with_container.dart';
 import '../../../constants/app_colors.dart';
@@ -13,12 +12,12 @@ class PasswordConfirmedView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final screenType = context.screenType();
+    // final screenType = context.screenType();
 
     return ViewWithContainer(
       children: [
         Flexible(
-          flex: screenType == ScreenType.desktop ? 2 : 6,
+          // flex: screenType == ScreenType.desktop ? 2 : 6,
           child: Container(
             padding: EdgeInsets.symmetric(vertical: height * 0.08, horizontal: 32),
             decoration:

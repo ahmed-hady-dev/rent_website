@@ -1,14 +1,9 @@
-import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
 import '../core/router/router.dart';
 
 class AppConst {
   static const appName = "الإسم";
-}
-
-extension IsEn on Widget {
-  bool get isEn => MagicRouter.currentContext!.locale.languageCode == 'en';
 }
 
 extension Height on Widget {

@@ -1,12 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:gap/gap.dart';
-import 'package:rent_website/components/text_with_padding.dart';
-import 'package:rent_website/constants/app_const.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 import 'background_image.dart';
 import 'desktop_header.dart';
-import 'filter_dropdown_button.dart';
 import 'filter_row.dart';
 import 'middle_text.dart';
 

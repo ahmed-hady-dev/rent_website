@@ -84,7 +84,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
             hintStyle: widget.hintStyle,
             enabled: widget.enabled ?? true,
             filled: true,
-            fillColor: widget.fillColor ?? Colors.white,
+            fillColor: widget.fillColor ?? AppColors.backgroundColor,
             errorStyle: const TextStyle(fontSize: 12, height: .9),
             border: widget.showBorder
                 ? const OutlineInputBorder(
