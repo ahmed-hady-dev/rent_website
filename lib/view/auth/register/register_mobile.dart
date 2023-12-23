@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:rent_website/constants/app_const.dart';
 
-import '../../../components/custom_text_field.dart';
 import '../../../components/text_with_padding.dart';
 import '../../../constants/app_colors.dart';
-import 'component/create_account_button.dart';
-import 'component/forgot_password_button.dart';
-import 'component/login_button.dart';
+import 'component/register_button.dart';
+import 'component/register_form.dart';
 
-class LoginMobile extends StatelessWidget {
-  const LoginMobile({Key? key}) : super(key: key);
+class RegisterMobile extends StatelessWidget {
+  const RegisterMobile({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -41,17 +39,8 @@ class LoginMobile extends StatelessWidget {
                     ),
                   ],
                 ),
-                Form(
-                  child: Column(
-                    children: <Widget>[
-                      CustomTextField(hint: 'ادخل رقم هاتفك', vertical: 16),
-                      CustomTextField(hint: 'ادخل كلمة المرور', type: TextInputType.visiblePassword),
-                    ],
-                  ),
-                ),
-                ForgotPasswordButton(),
-                CreateAccountButton(),
-                LoginButton(),
+                RegisterForm(),
+                RegisterButton(),
               ],
             ),
           ),
