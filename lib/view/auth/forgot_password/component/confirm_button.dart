@@ -15,7 +15,11 @@ class ConfirmButton extends StatelessWidget {
       child: ElevatedButton(
         onPressed: () => MagicRouter.navigateTo(const PasswordConfirmedView()),
         style: ElevatedButton.styleFrom(
-            backgroundColor: AppColors.purpleDark, padding: const EdgeInsets.symmetric(vertical: 24)),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(8.0),
+            ),
+            backgroundColor: AppColors.purpleDark,
+            padding: const EdgeInsets.symmetric(vertical: 24)),
         child: const Text('التاكيد'),
       ),
     );
