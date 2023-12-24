@@ -40,8 +40,11 @@ class AdCard extends StatelessWidget {
                 height: height * 0.17,
                 decoration: const BoxDecoration(
                   // color: AppColors.purpleDark,
-                  image: DecorationImage(image: AssetImage('assets/images/room.png')),
-                  borderRadius: BorderRadius.all(Radius.circular(4)),
+                  image: DecorationImage(
+                    image: AssetImage('assets/images/room.png'),
+                    fit: BoxFit.cover,
+                  ),
+                  borderRadius: BorderRadius.only(topRight: Radius.circular(4) , topLeft: Radius.circular(4)),
                 ),
               ),
               const Gap(12),

@@ -4,6 +4,7 @@ import 'package:rent_website/view/home/component/special_ads_row.dart';
 
 import 'component/ads_grid_view.dart';
 import 'component/desktop_top_section.dart';
+import 'component/footer.dart';
 
 class HomeWeb extends StatelessWidget {
   const HomeWeb({Key? key}) : super(key: key);
@@ -25,6 +26,7 @@ class HomeWeb extends StatelessWidget {
               AdsGridView(),
               RecommendedAdsRow(),
               AdsGridView(),
+              Footer(),
             ],
           ),
         ),
