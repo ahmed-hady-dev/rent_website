@@ -54,7 +54,7 @@ class PasswordConfirmedMobile extends StatelessWidget {
                       foregroundColor: AppColors.purpleDark,
                     ),
                     onPressed: () => MagicRouter.navigateAndPopAll(const LoginView()),
-                    icon: const Icon(Icons.arrow_back),
+                    icon: const Icon(Icons.arrow_back_rounded),
                     label: const Text(
                       'اذهب لتسجيل الدخول',
                       style: TextStyle(fontSize: 14),

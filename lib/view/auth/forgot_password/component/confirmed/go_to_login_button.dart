@@ -31,7 +31,7 @@ class _GoToLoginButtonState extends State<GoToLoginButton> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               const Icon(
-                Icons.arrow_back,
+                Icons.arrow_back_rounded,
                 color: AppColors.purpleDark,
                 size: 32.0,
               ),
