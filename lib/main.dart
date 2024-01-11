@@ -1,7 +1,7 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:rent_website/view/auth/login/login_view.dart';
+import 'package:rent_website/view/home/home_view.dart';
 import 'package:sizer/sizer.dart';
 
 import 'core/dioHelper/dio_helper.dart';
@@ -36,8 +36,9 @@ class MyApp extends StatelessWidget {
         onGenerateRoute: onGenerateRoute,
         themeMode: ThemeMode.light,
         theme: lightTheme(context),
-        // home: const HomeView(),
-        home: const LoginView(),
+        home: const HomeView(),
+        // TODO: make the home page
+        // home: const LoginView(),
         locale: context.locale,
         supportedLocales: context.supportedLocales,
         localizationsDelegates: context.localizationDelegates,
