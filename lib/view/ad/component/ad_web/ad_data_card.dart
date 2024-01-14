@@ -42,9 +42,9 @@ class AdDataCard extends StatelessWidget {
             ],
           ),
           Gap(height * 0.02),
-          Text(
-            'الشقه حي تاني المجاوره الاولى بارخص سعر ' * 3,
-            style: const TextStyle(fontSize: 18, color: Color(0xff27273F)),
+          const Text(
+            'الشقه حي تاني المجاوره الاولى بارخص سعر ',
+            style: TextStyle(fontSize: 18, color: Color(0xff27273F)),
           ),
           Gap(height * 0.04),
           const Row(

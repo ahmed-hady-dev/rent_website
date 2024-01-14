@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:rent_website/constants/app_const.dart';
 import 'package:rent_website/view/ad/component/ad_mobile/mobile_ad_carousel.dart';
 import 'package:rent_website/view/ad/component/ad_mobile/mobile_visit_details_card.dart';
 
