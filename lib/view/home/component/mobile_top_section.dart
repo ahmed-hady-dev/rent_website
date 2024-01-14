@@ -40,7 +40,7 @@ class MobileTopSection extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
               Padding(
-                padding: EdgeInsets.only(left: width * 0.04, right: width * 0.04, top: height * 0.02),
+                padding: EdgeInsets.only(left: hPaddingMobile, right: width * 0.04, top: height * 0.02),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
@@ -83,7 +83,7 @@ class MobileTopSection extends StatelessWidget {
           left: 0,
           right: 0,
           child: Padding(
-            padding: EdgeInsets.only(left: width * 0.04, right: width * 0.04, top: height * 0.02),
+            padding: EdgeInsets.only(left: hPaddingMobile, right: width * 0.04, top: height * 0.02),
             child: const Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.center,

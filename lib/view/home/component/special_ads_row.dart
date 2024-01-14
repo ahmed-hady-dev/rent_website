@@ -21,7 +21,7 @@ class _SpecialAdsRowState extends State<SpecialAdsRow> {
     return BlocBuilder<HomeCubit, HomeState>(
       builder: (context, state) {
         return Padding(
-          padding: EdgeInsets.only(left: widget.width * 0.07, right: widget.width * 0.07, top: widget.height * 0.07),
+          padding: EdgeInsets.only(left: widget.hPaddingWeb, right: widget.width * 0.07, top: widget.height * 0.07),
           child: Row(
             children: <Widget>[
               const Text('اعلانات مميزه', style: TextStyle(color: Color(0xff6E7491), fontSize: 18)),

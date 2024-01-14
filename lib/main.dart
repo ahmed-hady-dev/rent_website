@@ -1,6 +1,7 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:rent_website/view/ad/ad_view.dart';
 import 'package:rent_website/view/home/home_view.dart';
 import 'package:sizer/sizer.dart';
 
@@ -36,7 +37,7 @@ class MyApp extends StatelessWidget {
         onGenerateRoute: onGenerateRoute,
         themeMode: ThemeMode.light,
         theme: lightTheme(context),
-        home: const HomeView(),
+        home: const AdView(),
         // TODO: make the home page
         // home: const LoginView(),
         locale: context.locale,

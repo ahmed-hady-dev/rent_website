@@ -19,24 +19,18 @@ class HomeWeb extends StatelessWidget {
       const RecommendedAdsRow(),
       const AdsGridView(),
     ];
-    final verticalController = ScrollController();
     return BlocBuilder<HomeCubit, HomeState>(
       builder: (context, state) {
         return Scaffold(
-          body: Scrollbar(
-            controller: verticalController,
-            thumbVisibility: true,
-            child: SingleChildScrollView(
-              controller: verticalController,
-              scrollDirection: Axis.vertical,
-              child: Column(
-                children: [
-                  const DesktopTopSection(),
-                  const SpecialAdsRow(),
-                  if (HomeCubit.get(context).showMoreClicked) const HomeCardListView() else ...webHomeList,
-                  const Footer(),
-                ],
-              ),
+          body: SingleChildScrollView(
+            scrollDirection: Axis.vertical,
+            child: Column(
+              children: [
+                const DesktopTopSection(),
+                const SpecialAdsRow(),
+                if (HomeCubit.get(context).showMoreClicked) const HomeCardListView() else ...webHomeList,
+                const Footer(),
+              ],
             ),
           ),
         );

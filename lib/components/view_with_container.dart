@@ -8,17 +8,13 @@ class ViewWithContainer extends StatefulWidget {
 }
 
 class _ViewWithContainerState extends State<ViewWithContainer> {
-  final verticalController = ScrollController();
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
         child: Scrollbar(
-          controller: verticalController,
           thumbVisibility: true,
           child: SingleChildScrollView(
-            controller: verticalController,
             scrollDirection: Axis.vertical,
             child: Row(
               mainAxisSize: MainAxisSize.min,

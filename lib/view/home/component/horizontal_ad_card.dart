@@ -27,7 +27,7 @@ class HorizontalAdCard extends StatelessWidget {
       shape: const RoundedRectangleBorder(side: BorderSide(color: Color(0xffCBD4E6), width: 1)),
       child: InkWell(
         splashColor: AppColors.purpleDark.withOpacity(0.2),
-        onTap: () => onTap,
+        onTap: onTap,
         child: SizedBox(
           height: height * 0.35,
           child: Row(

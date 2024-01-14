@@ -20,7 +20,7 @@ class _DesktopHeaderState extends State<DesktopHeader> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(left: widget.width * 0.07, right: widget.width * 0.07, top: widget.height * 0.07),
+      padding: EdgeInsets.only(left: widget.hPaddingWeb, right: widget.width * 0.07, top: widget.height * 0.07),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[

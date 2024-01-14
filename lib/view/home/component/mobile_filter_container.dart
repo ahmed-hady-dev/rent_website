@@ -11,7 +11,7 @@ class MobileFilterContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(vertical: 32, horizontal: width * 0.04),
+      padding: EdgeInsets.symmetric(vertical: 32, horizontal: hPaddingMobile),
       child: Column(
         children: <Widget>[
           FilterDropdownButton(

@@ -14,6 +14,14 @@ extension Width on Widget {
   double get width => MediaQuery.of(MagicRouter.currentContext!).size.width;
 }
 
+extension HorizontalPaddingWeb on Widget {
+  double get hPaddingWeb => MediaQuery.of(MagicRouter.currentContext!).size.width * 0.07;
+}
+
+extension HorizontalPaddingMobile on Widget {
+  double get hPaddingMobile => MediaQuery.of(MagicRouter.currentContext!).size.width * 0.04;
+}
+
 extension StringExtension on String {
   String get capitalize => isNotEmpty ? this[0].toUpperCase() + substring(1) : this;
 }

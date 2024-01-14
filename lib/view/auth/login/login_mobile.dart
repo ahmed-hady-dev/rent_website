@@ -16,9 +16,9 @@ class LoginMobile extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: SingleChildScrollView(
-          padding: EdgeInsets.symmetric(horizontal: width * 0.04),
+          padding: EdgeInsets.symmetric(horizontal: hPaddingMobile),
           child: Container(
-            padding: EdgeInsets.symmetric(vertical: height * 0.05, horizontal: width * 0.04),
+            padding: EdgeInsets.symmetric(vertical: height * 0.05, horizontal: hPaddingMobile),
             decoration:
                 BoxDecoration(borderRadius: BorderRadius.circular(8), border: Border.all(color: AppColors.grey)),
             child: const Column(

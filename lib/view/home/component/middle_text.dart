@@ -7,7 +7,7 @@ class MiddleText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: width * 0.07),
+      padding: EdgeInsets.symmetric(horizontal: hPaddingWeb),
       child: const Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:rent_website/constants/app_const.dart';
 
+import '../../../core/router/router.dart';
+import '../../ad/ad_view.dart';
 import 'horizontal_ad_card.dart';
 
 class HomeCardListView extends StatelessWidget {
@@ -14,10 +16,10 @@ class HomeCardListView extends StatelessWidget {
       shrinkWrap: true,
       physics: const NeverScrollableScrollPhysics(),
       separatorBuilder: (context, index) => const Gap(32),
-      padding: EdgeInsets.symmetric(horizontal: width * 0.07, vertical: height * 0.04),
+      padding: EdgeInsets.symmetric(horizontal: hPaddingWeb, vertical: height * 0.04),
       itemBuilder: (context, index) {
         return HorizontalAdCard(
-          onTap: () {},
+          onTap: () => MagicRouter.navigateTo(const AdView()),
           price: 1200,
           timeAgo: 'منذ ساعتين',
           address: 'الحي الثاني, اكتوبر',

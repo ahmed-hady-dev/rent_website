@@ -16,7 +16,7 @@ class _RecommendedAdsRowState extends State<RecommendedAdsRow> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(left: widget.width * 0.07, right: widget.width * 0.07),
+      padding: EdgeInsets.only(left: widget.hPaddingWeb, right: widget.width * 0.07),
       child: Row(
         children: <Widget>[
           const Text('مقترحات', style: TextStyle(color: Color(0xff6E7491), fontSize: 18)),

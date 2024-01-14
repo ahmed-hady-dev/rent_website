@@ -11,7 +11,7 @@ class MobileSpecialAdsRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(right: width * 0.07, left: width * 0.02),
+      padding: EdgeInsets.only(right: hPaddingWeb, left: width * 0.02),
       child: Row(
         children: <Widget>[
           const Text('اعلانات مميزه', style: TextStyle(color: Color(0xff6E7491), fontSize: 14)),

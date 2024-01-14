@@ -10,7 +10,7 @@ class FilterRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: width * 0.07),
+      padding: EdgeInsets.symmetric(horizontal: hPaddingWeb),
       child: SizedBox(
         height: 48,
         child: Row(

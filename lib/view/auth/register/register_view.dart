@@ -6,7 +6,6 @@ import '../../../core/res/responsive.dart';
 
 class RegisterView extends StatelessWidget {
   RegisterView({super.key});
-  final verticalController = ScrollController();
   @override
   Widget build(BuildContext context) {
     return const Responsive(mobile: RegisterMobile(), web: RegisterWeb());
