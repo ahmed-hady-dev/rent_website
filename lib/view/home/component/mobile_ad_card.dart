@@ -4,7 +4,7 @@ import 'package:rent_website/components/text_with_padding.dart';
 import 'package:rent_website/constants/app_colors.dart';
 import 'package:rent_website/constants/app_const.dart';
 
-import 'ad_card.dart';
+import 'like_button.dart';
 
 class MobileAdCard extends StatelessWidget {
   const MobileAdCard({
@@ -65,7 +65,7 @@ class MobileAdCard extends StatelessWidget {
                 ],
               ),
               Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.only(bottom: 8.0, right: 8.0, left: 8.0),
                 child: Text(
                   title,
                   softWrap: true,

@@ -4,6 +4,8 @@ import 'package:rent_website/components/text_with_padding.dart';
 import 'package:rent_website/constants/app_colors.dart';
 import 'package:rent_website/constants/app_const.dart';
 
+import 'like_button.dart';
+
 class AdCard extends StatelessWidget {
   const AdCard({
     Key? key,
@@ -39,12 +41,11 @@ class AdCard extends StatelessWidget {
               Container(
                 height: height * 0.17,
                 decoration: const BoxDecoration(
-                  // color: AppColors.purpleDark,
                   image: DecorationImage(
                     image: AssetImage('assets/images/room.png'),
                     fit: BoxFit.cover,
                   ),
-                  borderRadius: BorderRadius.only(topRight: Radius.circular(4) , topLeft: Radius.circular(4)),
+                  borderRadius: BorderRadius.only(topRight: Radius.circular(4), topLeft: Radius.circular(4)),
                 ),
               ),
               const Gap(12),
@@ -81,36 +82,6 @@ class AdCard extends StatelessWidget {
           ),
         ),
       ),
-    );
-  }
-}
-
-class LikeButton extends StatefulWidget {
-  const LikeButton({Key? key, required this.onPressed, this.color = Colors.black12}) : super(key: key);
-  final Function onPressed;
-  final Color color;
-  @override
-  _LikeButtonState createState() => _LikeButtonState();
-}
-
-class _LikeButtonState extends State<LikeButton> {
-  bool isLiked = false;
-
-  @override
-  Widget build(BuildContext context) {
-    return IconButton(
-      icon: Icon(
-        isLiked ? Icons.favorite : Icons.favorite_border,
-        color: AppColors.purpleDark,
-      ),
-      splashRadius: 16,
-      splashColor: AppColors.purpleDark.withOpacity(0.6),
-      onPressed: () {
-        setState(() {
-          isLiked = !isLiked;
-        });
-        widget.onPressed();
-      },
     );
   }
 }

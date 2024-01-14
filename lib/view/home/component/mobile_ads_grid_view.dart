@@ -13,7 +13,7 @@ class MobileAdsGridView extends StatelessWidget {
       physics: const NeverScrollableScrollPhysics(),
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
-        mainAxisExtent: height * 0.3,
+        mainAxisExtent: height <= 670 ? height * 0.4 : height * 0.3,
         mainAxisSpacing: width * 0.045,
         crossAxisSpacing: height * 0.015,
       ),

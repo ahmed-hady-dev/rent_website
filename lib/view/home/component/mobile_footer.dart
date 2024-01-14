@@ -10,7 +10,7 @@ class MobileFooter extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: width * 0.07, vertical: height * 0.04),
+      padding: EdgeInsets.symmetric(horizontal: width * 0.04, vertical: height * 0.04),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[

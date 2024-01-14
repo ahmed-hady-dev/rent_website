@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:rent_website/constants/app_const.dart';
+import 'package:rent_website/view/home/controller/home_cubit.dart';
 
 import '../../../constants/app_colors.dart';
 
@@ -20,7 +21,7 @@ class MobileSpecialAdsRow extends StatelessWidget {
           Directionality(
             textDirection: TextDirection.ltr,
             child: TextButton.icon(
-              onPressed: () {},
+              onPressed: () => HomeCubit.get(context).showMoreAds(),
               icon: const Icon(
                 Icons.arrow_back_rounded,
                 color: AppColors.purpleDark,
