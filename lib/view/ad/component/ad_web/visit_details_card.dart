@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:rent_website/constants/app_const.dart';
 
-class VisitDetailsContainer extends StatelessWidget {
-  const VisitDetailsContainer({
+class VisitDetailsCard extends StatelessWidget {
+  const VisitDetailsCard({
     super.key,
   });
 

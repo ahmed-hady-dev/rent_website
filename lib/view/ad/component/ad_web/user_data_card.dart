@@ -5,8 +5,8 @@ import 'package:rent_website/constants/app_const.dart';
 import '../../../../components/web_button_with_arrow.dart';
 import '../../../../constants/app_colors.dart';
 
-class UserDataContainer extends StatelessWidget {
-  const UserDataContainer({
+class UserDataCard extends StatelessWidget {
+  const UserDataCard({
     super.key,
   });
 
