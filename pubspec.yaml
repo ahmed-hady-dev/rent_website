@@ -26,6 +26,7 @@ dependencies:
   scrollable_positioned_list: ^0.3.8
   easy_localization: any
   sizer: ^2.0.15
+  carousel_slider: ^4.2.1
 
 dev_dependencies:
   flutter_test:
