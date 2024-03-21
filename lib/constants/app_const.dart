@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../core/router/router.dart';
 
 class AppConst {
-  static const appName = "الإسم";
+  static const appName = "بيتك";
 }
 
 extension Height on Widget {

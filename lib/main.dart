@@ -2,6 +2,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:rent_website/view/ad/ad_view.dart';
+import 'package:rent_website/view/publish_asset/publish_asset_view.dart';
 import 'package:sizer/sizer.dart';
 
 import 'core/dioHelper/dio_helper.dart';
@@ -37,7 +38,7 @@ class MyApp extends StatelessWidget {
         themeMode: ThemeMode.light,
         theme: lightTheme(context),
         // TODO: make the home page
-        home: const AdView(),
+        home: const PublishAssetView(),
         // home: const LoginView(),
         locale: context.locale,
         supportedLocales: context.supportedLocales,
