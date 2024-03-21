@@ -4,8 +4,10 @@ import 'package:gap/gap.dart';
 import 'package:rent_website/constants/app_colors.dart';
 import 'package:rent_website/constants/app_const.dart';
 
-import '../../../components/animated_icon_button.dart';
-import '../../../components/text_with_padding.dart';
+import '../core/router/router.dart';
+import '../view/publish_asset/publish_asset_view.dart';
+import 'animated_icon_button.dart';
+import 'text_with_padding.dart';
 
 class DesktopHeader extends StatefulWidget {
   const DesktopHeader({Key? key}) : super(key: key);
@@ -44,7 +46,7 @@ class _DesktopHeaderState extends State<DesktopHeader> {
               ),
               Gap(widget.width * 0.02),
               AnimatedIconButton(
-                  onTap: () {},
+                  onTap: () => MagicRouter.navigateTo(PublishAssetView()),
                   icon: null,
                   radius: 8,
                   child: const Text(

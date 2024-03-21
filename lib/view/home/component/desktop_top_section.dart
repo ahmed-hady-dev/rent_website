@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'background_image.dart';
-import 'desktop_header.dart';
+import '../../../components/desktop_header.dart';
 import 'filter_row.dart';
 import 'middle_text.dart';
 

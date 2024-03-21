@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:rent_website/constants/app_const.dart';
+import 'package:rent_website/core/router/router.dart';
 
-import '../../constants/app_colors.dart';
+import '../../../constants/app_colors.dart';
+import '../../free_asset_ad/free_asset_ad_view.dart';
+import '../../premium_asset_ad/premium_asset_ad_view.dart';
 
 class PublishAssetMainContainer extends StatefulWidget {
   const PublishAssetMainContainer({
@@ -15,6 +18,16 @@ class PublishAssetMainContainer extends StatefulWidget {
 
 class _PublishAssetMainContainerState extends State<PublishAssetMainContainer> {
   String _radioValue = '';
+  navigateToAssetAd() {
+    if (_radioValue == 'free') {
+      MagicRouter.navigateTo(const FreeAssetAdView());
+    } else if (_radioValue == 'premium') {
+      MagicRouter.navigateTo(const FreeAssetAdView());
+      // MagicRouter.navigateTo(const PremiumAssetAdView());
+    } else {
+      return null;
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -113,7 +126,7 @@ class _PublishAssetMainContainerState extends State<PublishAssetMainContainer> {
             child: SizedBox(
               width: widget.width,
               child: ElevatedButton(
-                onPressed: _radioValue == '' ? null : () {},
+                onPressed: _radioValue == '' ? null : navigateToAssetAd,
                 style: ElevatedButton.styleFrom(
                   backgroundColor: AppColors.purpleDark,
                   padding: const EdgeInsets.symmetric(vertical: 24),

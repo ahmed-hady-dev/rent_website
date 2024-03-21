@@ -7,6 +7,7 @@ class CustomTextField extends StatefulWidget {
   final Widget? suffix;
   final String hint;
   final Color? fillColor;
+  final Color? borderSideColor;
   final bool? enabled;
   final FocusNode? focusNode;
   final String? Function(String?)? validator;
@@ -48,6 +49,7 @@ class CustomTextField extends StatefulWidget {
     this.padding,
     this.vertical,
     this.horizontal,
+    this.borderSideColor,
   }) : super(key: key);
 
   @override
@@ -87,18 +89,20 @@ class _CustomTextFieldState extends State<CustomTextField> {
             fillColor: widget.fillColor ?? AppColors.backgroundColor,
             errorStyle: const TextStyle(fontSize: 12, height: .9),
             border: widget.showBorder
-                ? const OutlineInputBorder(
+                ? OutlineInputBorder(
                     borderRadius: BorderRadius.all(Radius.circular(8.0)),
-                    borderSide: BorderSide(color: Color(0xFFA1B0CC)))
+                    borderSide: BorderSide(color: widget.borderSideColor ?? Colors.black))
                 : null,
             enabledBorder: widget.showBorder
-                ? const OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(8.0)), borderSide: BorderSide(width: .75))
+                ? OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(8.0)),
+                    borderSide: BorderSide(width: .75, color: widget.borderSideColor ?? Color(0xFFA1B0CC)),
+                  )
                 : null,
             focusedBorder: widget.showBorder
-                ? const OutlineInputBorder(
+                ? OutlineInputBorder(
                     borderRadius: BorderRadius.all(Radius.circular(8.0)),
-                    borderSide: BorderSide(color: Color(0xFFA1B0CC)))
+                    borderSide: BorderSide(color: widget.borderSideColor ?? Color(0xFFA1B0CC)))
                 : null,
             prefixIcon: widget.prefix,
             prefixIconConstraints: widget.prefixIconConstraints,

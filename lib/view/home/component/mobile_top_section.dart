@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:rent_website/constants/app_const.dart';
+import 'package:rent_website/core/router/router.dart';
+import 'package:rent_website/view/publish_asset/publish_asset_view.dart';
 
 import '../../../components/text_with_padding.dart';
 
@@ -55,7 +57,7 @@ class MobileTopSection extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: <Widget>[
                         TextButton(
-                          onPressed: () {},
+                          onPressed: () => MagicRouter.navigateTo(PublishAssetView()),
                           child: const Text(
                             'اعرض عقارك هنا',
                             style: TextStyle(color: Colors.white, fontSize: 12),
