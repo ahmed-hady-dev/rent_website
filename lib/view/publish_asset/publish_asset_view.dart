@@ -9,6 +9,9 @@ class PublishAssetView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Responsive(mobile: PublishAssetMobile(), web: PublishAssetWeb());
+    return const Responsive(
+      web: PublishAssetWeb(),
+      mobile: PublishAssetMobile(),
+    );
   }
 }

@@ -46,7 +46,7 @@ class _DesktopHeaderState extends State<DesktopHeader> {
               ),
               Gap(widget.width * 0.02),
               AnimatedIconButton(
-                  onTap: () => MagicRouter.navigateTo(PublishAssetView()),
+                  onTap: () => MagicRouter.navigateTo(const PublishAssetView()),
                   icon: null,
                   radius: 8,
                   child: const Text(

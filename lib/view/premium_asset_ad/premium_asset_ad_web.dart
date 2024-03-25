@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:rent_website/constants/app_const.dart';
-import 'package:rent_website/view/publish_asset/component/publish_asset_main_container.dart';
 
 import '../../components/desktop_header.dart';
 

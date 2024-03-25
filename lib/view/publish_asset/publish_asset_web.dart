@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rent_website/constants/app_const.dart';
-import 'package:rent_website/view/publish_asset/component/publish_asset_main_container.dart';
+import 'package:rent_website/view/publish_asset/component/publish_asset_main_container_web.dart';
 
 import '../../components/desktop_header.dart';
 import 'component/publish_asset_background_image.dart';
@@ -29,7 +29,7 @@ class PublishAssetWeb extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
                   PublishAssetMainText(),
-                  PublishAssetMainContainer(),
+                  PublishAssetMainContainerWeb(),
                 ],
               ),
             ),

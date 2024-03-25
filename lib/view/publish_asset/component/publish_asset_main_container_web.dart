@@ -5,18 +5,17 @@ import 'package:rent_website/core/router/router.dart';
 
 import '../../../constants/app_colors.dart';
 import '../../free_asset_ad/free_asset_ad_view.dart';
-import '../../premium_asset_ad/premium_asset_ad_view.dart';
 
-class PublishAssetMainContainer extends StatefulWidget {
-  const PublishAssetMainContainer({
+class PublishAssetMainContainerWeb extends StatefulWidget {
+  const PublishAssetMainContainerWeb({
     super.key,
   });
 
   @override
-  State<PublishAssetMainContainer> createState() => _PublishAssetMainContainerState();
+  State<PublishAssetMainContainerWeb> createState() => _PublishAssetMainContainerWebState();
 }
 
-class _PublishAssetMainContainerState extends State<PublishAssetMainContainer> {
+class _PublishAssetMainContainerWebState extends State<PublishAssetMainContainerWeb> {
   String _radioValue = '';
   navigateToAssetAd() {
     if (_radioValue == 'free') {
