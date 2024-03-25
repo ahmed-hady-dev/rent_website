@@ -90,19 +90,19 @@ class _CustomTextFieldState extends State<CustomTextField> {
             errorStyle: const TextStyle(fontSize: 12, height: .9),
             border: widget.showBorder
                 ? OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(8.0)),
+                    borderRadius: const BorderRadius.all(Radius.circular(8.0)),
                     borderSide: BorderSide(color: widget.borderSideColor ?? Colors.black))
                 : null,
             enabledBorder: widget.showBorder
                 ? OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(8.0)),
-                    borderSide: BorderSide(width: .75, color: widget.borderSideColor ?? Color(0xFFA1B0CC)),
+                    borderRadius: const BorderRadius.all(Radius.circular(8.0)),
+                    borderSide: BorderSide(width: .75, color: widget.borderSideColor ?? const Color(0xFFA1B0CC)),
                   )
                 : null,
             focusedBorder: widget.showBorder
                 ? OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(8.0)),
-                    borderSide: BorderSide(color: widget.borderSideColor ?? Color(0xFFA1B0CC)))
+                    borderRadius: const BorderRadius.all(Radius.circular(8.0)),
+                    borderSide: BorderSide(color: widget.borderSideColor ?? const Color(0xFFA1B0CC)))
                 : null,
             prefixIcon: widget.prefix,
             prefixIconConstraints: widget.prefixIconConstraints,

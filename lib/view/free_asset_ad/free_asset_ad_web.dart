@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:gap/gap.dart';
 import 'package:rent_website/constants/app_const.dart';
 
@@ -28,18 +27,19 @@ class FreeAssetAdWeb extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  Text(
+                  const Text(
                     'عرض الاعلان',
                     style: TextStyle(color: AppColors.purpleDark, fontSize: 36, fontWeight: FontWeight.bold),
                   ),
-                  Gap(24),
-                  Text('اهلا بك', style: TextStyle(color: Colors.black, fontSize: 36, fontWeight: FontWeight.bold)),
-                  CustomTextField(
+                  const Gap(24),
+                  const Text('اهلا بك',
+                      style: TextStyle(color: Colors.black, fontSize: 36, fontWeight: FontWeight.bold)),
+                  const CustomTextField(
                     hint: 'اسم الاعلان',
                     vertical: 24,
                     borderSideColor: Color(0xFFCBD4E6),
                   ),
-                  FilterDropdownButton(
+                  const FilterDropdownButton(
                     topLeft: 8,
                     topRight: 8,
                     bottomLeft: 8,
@@ -49,8 +49,8 @@ class FreeAssetAdWeb extends StatelessWidget {
                     hintIcon: SizedBox(),
                     items: ['حي أول أكتوبر', 'حي ثاني أكتوبر', 'حي ثالث أكتوبر', 'حي رابع أكتوبر'],
                   ),
-                  Gap(24),
-                  FilterDropdownButton(
+                  const Gap(24),
+                  const FilterDropdownButton(
                     topLeft: 8,
                     topRight: 8,
                     bottomLeft: 8,
@@ -60,8 +60,8 @@ class FreeAssetAdWeb extends StatelessWidget {
                     hintIcon: SizedBox(),
                     items: ['عمال', 'اهالي', 'سكن بنات', 'سكن شباب'],
                   ),
-                  Gap(24),
-                  FilterDropdownButton(
+                  const Gap(24),
+                  const FilterDropdownButton(
                     topLeft: 8,
                     topRight: 8,
                     bottomLeft: 8,
@@ -71,8 +71,8 @@ class FreeAssetAdWeb extends StatelessWidget {
                     items: ['سرير', 'غرفة', 'شقه'],
                     hintIcon: SizedBox(),
                   ),
-                  Gap(24),
-                  FilterDropdownButton(
+                  const Gap(24),
+                  const FilterDropdownButton(
                     topLeft: 8,
                     topRight: 8,
                     bottomLeft: 8,
@@ -82,63 +82,63 @@ class FreeAssetAdWeb extends StatelessWidget {
                     items: ['3000-1000', '5000-3000', '7000-5000', '9000-7000', '9000-∞'],
                     hintIcon: SizedBox(),
                   ),
-                  CustomTextField(
+                  const CustomTextField(
                     hint: 'سعر التامين',
                     vertical: 24,
                     borderSideColor: Color(0xFFCBD4E6),
                   ),
-                  CustomTextField(
+                  const CustomTextField(
                     hint: 'الوصف للاعلان',
                     vertical: 0,
                     borderSideColor: Color(0xFFCBD4E6),
                   ),
-                  Gap(24),
-                  Align(
+                  const Gap(24),
+                  const Align(
                     alignment: Alignment.centerRight,
                     child: Text(
                       'قم بادراج صور تصل إلى 20 صورة للاعلان ',
                       style: TextStyle(color: Colors.grey, fontSize: 16),
                     ),
                   ),
-                  Gap(24),
+                  const Gap(24),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       Container(
-                        padding: EdgeInsets.all(4),
+                        padding: const EdgeInsets.all(4),
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(8), border: Border.all(color: AppColors.grey)),
                         child: IconButton(
                           onPressed: () {},
-                          icon: Icon(Icons.camera_alt),
+                          icon: const Icon(Icons.camera_alt),
                           splashColor: Colors.transparent,
                         ),
                       ),
-                      Gap(8),
+                      const Gap(8),
                       Container(
-                        padding: EdgeInsets.all(4),
+                        padding: const EdgeInsets.all(4),
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(8), border: Border.all(color: AppColors.grey)),
                         child: IconButton(
                           onPressed: () {},
-                          icon: Icon(Icons.camera_alt),
+                          icon: const Icon(Icons.camera_alt),
                           splashColor: Colors.transparent,
                         ),
                       ),
-                      Gap(8),
+                      const Gap(8),
                       Container(
-                        padding: EdgeInsets.all(4),
+                        padding: const EdgeInsets.all(4),
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(8), border: Border.all(color: AppColors.grey)),
                         child: IconButton(
                           onPressed: () {},
-                          icon: Icon(Icons.camera_alt),
+                          icon: const Icon(Icons.camera_alt),
                           splashColor: Colors.transparent,
                         ),
                       ),
                     ],
                   ),
-                  Gap(24),
+                  const Gap(24),
                   Align(
                     alignment: Alignment.centerRight,
                     child: ElevatedButton(

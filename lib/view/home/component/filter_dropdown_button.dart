@@ -12,10 +12,16 @@ class FilterDropdownButton extends StatefulWidget {
       this.topLeft,
       this.topRight,
       this.bottomLeft,
-      this.bottomRight});
+      this.bottomRight,
+      this.hintTextStyle,
+      this.fillColor,
+      this.itemsTextStyle});
   final List<String> items;
   final Widget hintIcon;
   final String hintText;
+  final Color? fillColor;
+  final TextStyle? hintTextStyle;
+  final TextStyle? itemsTextStyle;
   final IconData itemsIcon;
   final double? topLeft;
   final double? topRight;
@@ -44,7 +50,8 @@ class _FilterDropdownButtonState extends State<FilterDropdownButton> {
             const SizedBox(width: 4),
             Expanded(
               child: Text(widget.hintText,
-                  style: const TextStyle(fontSize: 18, color: Color(0xFF7C8DB0)), overflow: TextOverflow.ellipsis),
+                  style: widget.hintTextStyle ?? const TextStyle(fontSize: 18, color: Color(0xFF7C8DB0)),
+                  overflow: TextOverflow.ellipsis),
             ),
           ],
         ),
@@ -58,7 +65,7 @@ class _FilterDropdownButtonState extends State<FilterDropdownButton> {
                       const SizedBox(width: 4),
                       Text(
                         item,
-                        style: const TextStyle(color: Color(0xFF6E7491)),
+                        style: widget.itemsTextStyle ?? const TextStyle(color: Color(0xFF6E7491)),
                         overflow: TextOverflow.ellipsis,
                       )
                     ],
@@ -69,7 +76,7 @@ class _FilterDropdownButtonState extends State<FilterDropdownButton> {
           height: 48,
           elevation: 0,
           decoration: BoxDecoration(
-            color: AppColors.backgroundColor,
+            color: widget.fillColor ?? AppColors.backgroundColor,
             borderRadius: BorderRadius.only(
               bottomRight: Radius.circular(widget.bottomRight ?? 0),
               topRight: Radius.circular(widget.topRight ?? 0),
