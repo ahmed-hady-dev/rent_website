@@ -40,7 +40,7 @@ class FreeAssetAdMobile extends StatelessWidget {
                     vertical: height * 0.02,
                     fillColor: Colors.transparent,
                     borderSideColor: const Color(0xFFCBD4E6),
-                    textStyle: const TextStyle(color: Color(0xffC8DB0), fontSize: 14),
+                    textStyle: const TextStyle(color: Color(0xff7C8DB0), fontSize: 14),
                   ),
                   const FilterDropdownButton(
                     topLeft: 8,
@@ -101,15 +101,15 @@ class FreeAssetAdMobile extends StatelessWidget {
                     hint: 'سعر التامين',
                     vertical: height * 0.02,
                     fillColor: Colors.transparent,
-                    borderSideColor: Color(0xFFCBD4E6),
-                    textStyle: TextStyle(color: Color(0xff7C8DB0), fontSize: 14),
+                    borderSideColor: const Color(0xFFCBD4E6),
+                    textStyle: const TextStyle(color: Color(0xff7C8DB0), fontSize: 14),
                   ),
                   const CustomTextField(
                     hint: 'الوصف للاعلان',
                     vertical: 0,
                     fillColor: Colors.transparent,
                     borderSideColor: Color(0xFFCBD4E6),
-                    textStyle: TextStyle(color: Color(0xffC8DB0), fontSize: 14),
+                    textStyle: TextStyle(color: Color(0xff7C8DB0), fontSize: 14),
                   ),
                   Gap(height * 0.02),
                   const Align(

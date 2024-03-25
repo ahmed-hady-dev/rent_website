@@ -8,7 +8,7 @@ import 'core/hive_helper/hive_helper.dart';
 import 'core/router/router.dart';
 import 'core/theme/theme.dart';
 import 'firebase_options.dart';
-import 'view/free_asset_ad/free_asset_ad_view.dart';
+import 'view/auth/login/login_view.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -37,8 +37,8 @@ class MyApp extends StatelessWidget {
         themeMode: ThemeMode.light,
         theme: lightTheme(context),
         // TODO: make the home page
-        home: const FreeAssetAdView(),
-        // home: const LoginView(),
+        // home: const FreeAssetAdView(),
+        home: const LoginView(),
         locale: context.locale,
         supportedLocales: context.supportedLocales,
         localizationsDelegates: context.localizationDelegates,

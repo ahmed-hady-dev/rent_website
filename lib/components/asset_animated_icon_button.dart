@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import '../constants/app_colors.dart';
 
 class AssetAnimatedIconButton extends StatefulWidget {
-  AssetAnimatedIconButton(
+  const AssetAnimatedIconButton(
       {super.key,
       required this.icon,
       this.color,

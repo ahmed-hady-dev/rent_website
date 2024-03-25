@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import '../constants/app_colors.dart';
 
 class AnimatedIconButton extends StatefulWidget {
-  AnimatedIconButton(
+  const AnimatedIconButton(
       {super.key,
       required this.icon,
       this.color,

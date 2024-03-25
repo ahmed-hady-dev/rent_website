@@ -57,7 +57,7 @@ class MobileTopSection extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: <Widget>[
                         TextButton(
-                          onPressed: () => MagicRouter.navigateTo(PublishAssetView()),
+                          onPressed: () => MagicRouter.navigateTo(const PublishAssetView()),
                           child: const Text(
                             'اعرض عقارك هنا',
                             style: TextStyle(color: Colors.white, fontSize: 12),

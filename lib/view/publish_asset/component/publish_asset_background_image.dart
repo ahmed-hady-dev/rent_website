@@ -19,7 +19,7 @@ class PublishAssetBackgroundImage extends StatelessWidget {
             Opacity(
               opacity: isMobile ? 1 : 0.5,
               child: Container(
-                color: isMobile ? const Color(0xff27273f80) : Colors.black,
+                color: isMobile ? const Color(0xff27273f) : Colors.black,
                 width: width,
                 height: height,
               ),

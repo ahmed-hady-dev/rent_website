@@ -47,11 +47,11 @@ class _MobileAdCarouselState extends State<MobileAdCarousel> {
                 setState(() => initialPage = index);
               },
             ),
-            items: imageList.map((ImageList) {
+            items: imageList.map((imageList) {
               return Builder(builder: (BuildContext context) {
                 return Container(
                   decoration: BoxDecoration(
-                    image: DecorationImage(image: AssetImage(ImageList), fit: BoxFit.contain),
+                    image: DecorationImage(image: AssetImage(imageList), fit: BoxFit.contain),
                   ),
                 );
               });

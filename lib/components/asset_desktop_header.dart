@@ -4,7 +4,6 @@ import 'package:gap/gap.dart';
 import 'package:rent_website/constants/app_colors.dart';
 import 'package:rent_website/constants/app_const.dart';
 
-import 'animated_icon_button.dart';
 import 'asset_animated_icon_button.dart';
 import 'text_with_padding.dart';
 

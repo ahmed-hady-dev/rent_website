@@ -17,7 +17,7 @@ class CreateAccountButton extends StatelessWidget {
           children: <Widget>[
             const Text('لا تمتلك حساب؟', overflow: TextOverflow.ellipsis),
             TextButton(
-                onPressed: () => MagicRouter.navigateTo(RegisterView()),
+                onPressed: () => MagicRouter.navigateTo(const RegisterView()),
                 child: const Text('اصنع حساب', style: TextStyle(color: AppColors.purpleDark)))
           ],
         ),
