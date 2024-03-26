@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:rent_website/constants/app_const.dart';
+import 'package:rent_website/core/router/router.dart';
 
 import '../../components/custom_text_field.dart';
 import '../../constants/app_colors.dart';
 import '../free_asset_ad/component/free_and_premium_asset_header_mobile.dart';
+import '../publish_ad_success/publish_ad_success_view.dart';
 
 class PremiumAssetAdMobile extends StatelessWidget {
   const PremiumAssetAdMobile({Key? key}) : super(key: key);
@@ -109,7 +111,7 @@ class PremiumAssetAdMobile extends StatelessWidget {
                   Align(
                     alignment: Alignment.centerRight,
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () => MagicRouter.navigateTo(const PublishAdSuccessView()),
                       style: ElevatedButton.styleFrom(
                         backgroundColor: AppColors.purpleBlue,
                         padding: const EdgeInsets.symmetric(vertical: 18, horizontal: 18),

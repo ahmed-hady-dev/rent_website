@@ -5,6 +5,8 @@ import 'package:rent_website/constants/app_const.dart';
 import '../../components/asset_desktop_header.dart';
 import '../../components/custom_text_field.dart';
 import '../../constants/app_colors.dart';
+import '../../core/router/router.dart';
+import '../publish_ad_success/publish_ad_success_view.dart';
 
 class PremiumAssetAdWeb extends StatelessWidget {
   const PremiumAssetAdWeb({Key? key}) : super(key: key);
@@ -106,7 +108,7 @@ class PremiumAssetAdWeb extends StatelessWidget {
                   Align(
                     alignment: Alignment.centerRight,
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () => MagicRouter.navigateTo(const PublishAdSuccessView()),
                       style: ElevatedButton.styleFrom(
                         backgroundColor: AppColors.purpleBlue,
                         padding: const EdgeInsets.symmetric(vertical: 18, horizontal: 18),
