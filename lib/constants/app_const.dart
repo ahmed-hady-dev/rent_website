@@ -4,6 +4,8 @@ import '../core/router/router.dart';
 
 class AppConst {
   static const appName = "بيتك";
+  static const adPrice = 50;
+  static const contactNumber = 01282917123;
 }
 
 extension Height on Widget {

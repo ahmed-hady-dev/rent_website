@@ -5,6 +5,7 @@ import 'package:rent_website/core/router/router.dart';
 
 import '../../../constants/app_colors.dart';
 import '../../free_asset_ad/free_asset_ad_view.dart';
+import '../../premium_asset_ad/premium_asset_ad_view.dart';
 
 class PublishAssetMainContainerMobile extends StatefulWidget {
   const PublishAssetMainContainerMobile({
@@ -21,8 +22,7 @@ class _PublishAssetMainContainerMobileState extends State<PublishAssetMainContai
     if (_radioValue == 'free') {
       MagicRouter.navigateTo(const FreeAssetAdView());
     } else if (_radioValue == 'premium') {
-      MagicRouter.navigateTo(const FreeAssetAdView());
-      // MagicRouter.navigateTo(const PremiumAssetAdView());
+      MagicRouter.navigateTo(const PremiumAssetAdView());
     } else {
       return null;
     }

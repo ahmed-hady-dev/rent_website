@@ -4,8 +4,8 @@ import 'package:rent_website/constants/app_const.dart';
 import '../../../components/text_with_padding.dart';
 import '../../../constants/app_colors.dart';
 
-class FreeAssetHeaderMobile extends StatelessWidget {
-  const FreeAssetHeaderMobile({Key? key}) : super(key: key);
+class FreeAndPremiumAssetHeaderMobile extends StatelessWidget {
+  const FreeAndPremiumAssetHeaderMobile({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

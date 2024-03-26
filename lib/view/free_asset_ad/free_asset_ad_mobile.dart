@@ -5,7 +5,7 @@ import 'package:rent_website/constants/app_const.dart';
 import '../../components/custom_text_field.dart';
 import '../../constants/app_colors.dart';
 import '../home/component/filter_dropdown_button.dart';
-import 'component/free_asset_header_mobile.dart';
+import 'component/free_and_premium_asset_header_mobile.dart';
 
 class FreeAssetAdMobile extends StatelessWidget {
   const FreeAssetAdMobile({Key? key}) : super(key: key);
@@ -16,12 +16,12 @@ class FreeAssetAdMobile extends StatelessWidget {
       backgroundColor: Colors.white,
       body: ListView(
         children: [
-          const FreeAssetHeaderMobile(),
+          const FreeAndPremiumAssetHeaderMobile(),
           Gap(height * 0.02),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: hPaddingMobile),
             child: Container(
-              padding: EdgeInsets.only(top: height * 0.04, bottom: 24, left: 32, right: 32),
+              padding: EdgeInsets.only(top: height * 0.04, bottom: 24, left: width * 0.04, right: width * 0.04),
               decoration:
                   BoxDecoration(borderRadius: BorderRadius.circular(8), border: Border.all(color: AppColors.grey)),
               child: Column(
@@ -40,6 +40,7 @@ class FreeAssetAdMobile extends StatelessWidget {
                     vertical: height * 0.02,
                     fillColor: Colors.transparent,
                     borderSideColor: const Color(0xFFCBD4E6),
+                    hintStyle: const TextStyle(color: Color(0xff7C8DB0), fontSize: 14),
                     textStyle: const TextStyle(color: Color(0xff7C8DB0), fontSize: 14),
                   ),
                   const FilterDropdownButton(
@@ -102,6 +103,7 @@ class FreeAssetAdMobile extends StatelessWidget {
                     vertical: height * 0.02,
                     fillColor: Colors.transparent,
                     borderSideColor: const Color(0xFFCBD4E6),
+                    hintStyle: const TextStyle(color: Color(0xff7C8DB0), fontSize: 14),
                     textStyle: const TextStyle(color: Color(0xff7C8DB0), fontSize: 14),
                   ),
                   const CustomTextField(
@@ -109,6 +111,7 @@ class FreeAssetAdMobile extends StatelessWidget {
                     vertical: 0,
                     fillColor: Colors.transparent,
                     borderSideColor: Color(0xFFCBD4E6),
+                    hintStyle: TextStyle(color: Color(0xff7C8DB0), fontSize: 14),
                     textStyle: TextStyle(color: Color(0xff7C8DB0), fontSize: 14),
                   ),
                   Gap(height * 0.02),
@@ -116,7 +119,7 @@ class FreeAssetAdMobile extends StatelessWidget {
                     alignment: Alignment.centerRight,
                     child: Text(
                       'قم بادراج صور تصل إلى 20 صورة للاعلان ',
-                      style: TextStyle(color: Colors.grey, fontSize: 16),
+                      style: TextStyle(color: Color(0xff7C8DB0), fontSize: 16),
                     ),
                   ),
                   Gap(height * 0.02),
